@@ -11,6 +11,10 @@ img{
 }
 
 .small-image {
-  width:30%;
+  width:20%;
   margin-top:10px;
+}
+
+p{
+  style:block;
 }

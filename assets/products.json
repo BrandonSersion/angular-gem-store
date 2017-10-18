@@ -5,6 +5,7 @@
   "price": 110.50,
   "rarity": 7,
   "color": "#CCC",
+  "canPurchase": false,
   "faces": 14,
   "images": ["./assets/images/gem-02.gif", "./assets/images/gem-05.gif", "./assets/images/gem-09.gif"],
   "reviews": []
@@ -15,6 +16,7 @@
   "price": 22.90,
   "rarity": 6,
   "color": "#EEE",
+  "canPurchase": true,
   "faces": 12,
   "images": ["./assets/images/gem-01.gif", "./assets/images/gem-03.gif", "./assets/images/gem-04.gif"],
   "reviews": []
@@ -25,6 +27,7 @@
   "price": 1100,
   "rarity": 2,
   "color": "#000",
+  "canPurchase": true,
   "faces": 6,
   "images": ["./assets/images/gem-06.gif", "./assets/images/gem-07.gif", "./assets/images/gem-08.gif"],
   "reviews": []
