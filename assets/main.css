@@ -1,0 +1,16 @@
+body{
+  background-color:blue;
+}
+
+li{
+list-style:none;
+}
+
+img{
+  width:10em;
+}
+
+.small-image {
+  width:30%;
+  margin-top:10px;
+}

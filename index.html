@@ -12,9 +12,32 @@
   <link href="./assets/main.css" rel="stylesheet">
 </head>
 
-<body>
-  {{5+5}}
-
+<body ng-controller="StoreCtrl">
+  <div class="row">
+    <div class="container">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="list-group">
+          <!--Products Container-->
+          <div class="list-group-item" ng-repeat="product in products">
+            <h3>
+            {{product.name}}
+            <em class="pull-right">{{product.price | currency}}</em>
+          </h3>
+            <div class="gallery">
+              <h4>{{product.description}}</h4>
+              <img class="img img-circle img-thumbnail center-block" ng-src="{{product.images[0]}}" alt="">
+              <ul class="clearfix">
+                <li ng-repeat="image in product.images">
+                <img class="small-image pull-left thumbnail ng-scope" src="{{image}}" alt="">
+              </li>
+              </ul>
+            </div>
+            <!--Image Gallery-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
